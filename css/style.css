@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #542E71, #FB3640);
+}
+
+section .circle{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(90deg, #542E71, #FB3640);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .circle i{
+    position: absolute;
+    background: linear-gradient(90deg, #542E71, #FB3640);
+    z-index: 2;
+    inset: -5px;
+    filter: blur(50px);
+    border-radius: 50%;
+}
+
+section .circle i:nth-child(4){
+    background: #fff;
+    z-index: 3;
+    inset: 5px;
+}
+
+section .circle j{
+    position: absolute;
+    inset: -5px;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25), 20px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+section .circle h2{
+    position: relative;
+    z-index: 20;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: #646464;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+
+section .circle h2 span{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 90px;
+    z-index: 20;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer p a{
+    color: #fff;
+}
